@@ -1,11 +1,15 @@
 # Bayesian Optimization for fun
 
 
-The simplest* implementation of Bayesian optimisation. 
+The simplest[1] implementation of Bayesian optimisation. 
 
 
 
 
 
-* Not really, it could probably be made even simpler. 
+
+
+
+
+[1] Not really, it could probably be made even simpler. 
 
