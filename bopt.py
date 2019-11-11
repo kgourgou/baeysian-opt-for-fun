@@ -28,7 +28,7 @@ def expected_improvement(x, current_max, model):
     return exp_imp
 
 
-def bayes_opt(known_points, fun, n_iter, bounds=(0,10)):
+def bayes_opt(known_points, fun, n_iter, bounds=(-10,10)):
     """
     Bayesian optimization with the simplest acquisition function,
     "expected_improvement". Goal is to find the global maximum of 
@@ -56,7 +56,7 @@ def bayes_opt(known_points, fun, n_iter, bounds=(0,10)):
 
         opt = minimize_scalar(g,
                               bounds=bounds,
-                              method='bounded')
+                              method='Bounded')
         xnew = opt['x']
         ynew = fun(xnew)
         running_max = max([running_max, ynew])
